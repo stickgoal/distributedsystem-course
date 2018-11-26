@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!--定义dubbo应用的信息，用于计算依赖关系，在dubbo-monitor和dubbo-admin中显示此名字-->
+    <dubbo:application  name="dubbodemo-provider" owner="lucas" organization="etc"/>
+    <!--dubbo注册中心，要先开启zk，本应用启动时会注册到zk-->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <!--用dubbo协议暴露服务在20880-->
+    <dubbo:protocol name="dubbo" port="20880"/>
+    <dubbo:service interface="me.maiz.ds.dubbodemo.provider.HelloService" ref="helloService" protocol="dubbo"/>
+    <bean id="helloService" class="me.maiz.ds.dubbodemo.provider.HelloServiceImpl" />
+
+</beans>
