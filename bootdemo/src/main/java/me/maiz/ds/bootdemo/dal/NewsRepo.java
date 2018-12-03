@@ -1,6 +1,7 @@
-package me.maiz.ds.bootdemo;
+package me.maiz.ds.bootdemo.dal;
 
 
+import me.maiz.ds.bootdemo.domain.News;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.io.IOException;
