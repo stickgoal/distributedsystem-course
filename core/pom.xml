@@ -25,6 +25,25 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>me.maiz.ds.multimodule</groupId>
+                <artifactId>core-facade</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>me.maiz.ds.multimodule</groupId>
+                <artifactId>core-integration</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            
+            
+        </dependencies>
+
+
+    </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
