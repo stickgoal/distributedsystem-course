@@ -28,6 +28,7 @@ hs_err_pid*
 
 #maven
 target/
-rmidemoconsumer/src/main/java/me/maiz/course/.DS_Store
-rmidemoconsumer/src/main/java/me/maiz/course/distributedsystem/.DS_Store
-rmidemoconsumer/src/main/java/me/maiz/course/distributedsystem/rpcimpl/.DS_Store
+
+#mac
+*.DS_Store
+.DS_Store
