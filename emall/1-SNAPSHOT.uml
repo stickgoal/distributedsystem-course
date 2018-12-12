@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MAVEN</ID>
+  <OriginalElement>me.maiz.ds.multimodule:emall:0.0.1-SNAPSHOT</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">me.maiz.ds.multimodule:emall:0.0.1-SNAPSHOT</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="31.5" y="14.5" />
+  <SelectedNodes>
+    <node>me.maiz.ds.multimodule:emall:0.0.1-SNAPSHOT</node>
+  </SelectedNodes>
+  <Categories />
+  <VISIBILITY>All</VISIBILITY>
+</Diagram>
+

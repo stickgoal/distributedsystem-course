@@ -1,9 +1,11 @@
 package me.maiz.ds.multimodule.dto;
 
-public class UserInfo {
+import java.io.Serializable;
+
+public class UserInfo implements Serializable {
     private String username;
 
-private int age;
+    private int age;
 
     public String getUsername() {
         return username;
@@ -18,6 +20,13 @@ private int age;
     }
 
     public void setAge(int age) {
+        this.age = age;
+    }
+
+    public UserInfo(){}
+
+    public UserInfo(String username, int age) {
+        this.username = username;
         this.age = age;
     }
 

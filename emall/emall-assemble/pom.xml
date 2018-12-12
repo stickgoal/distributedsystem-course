@@ -7,6 +7,7 @@
         <artifactId>emall</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <artifactId>emall-assemble</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -36,6 +37,12 @@
             <artifactId>emall-facade</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!-- 业务依赖-->
+        <dependency>
+            <groupId>me.maiz.ds.multimodule</groupId>
+            <artifactId>core-facade</artifactId>
+            <version>0.0.1</version>
+        </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
@@ -49,5 +56,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
