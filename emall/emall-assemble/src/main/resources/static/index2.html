@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎您来到微风商城</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            background-color: #eeeeee;
+        }
+        form{
+            width: 500px;
+            height: 200px;
+            margin: 10% auto 0;
+            text-align: center;
+        }
+        .form-item{
+            width: 100%;
+            padding-top: 5px;
+        }
+        .form-item input{
+            height: 2em;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .form-item [type=submit]{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<form action="/login" method="post">
+    <div class="form-item">
+        <input type="text" name="username" placeholder="请输入用户名">
+    </div>
+    <div class="form-item">
+        <input type="password" name="password" placeholder="请输入密码">
+    </div>
+    <div class="form-item">
+        <input type="submit"/>
+    </div>
+</form>
+
+</body>
+</html>
